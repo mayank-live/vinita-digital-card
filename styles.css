@@ -150,6 +150,19 @@ a { color: inherit; text-decoration: none; }
     margin-bottom: 0.9rem;
 }
 
+@media (max-width: 440px) {
+    .action-buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.6rem;
+    }
+    .action-btn {
+        width: 100% !important;
+        height: auto !important;
+        padding: 0.75rem 0.5rem;
+    }
+}
+
 .action-btn {
     display: flex;
     flex-direction: column;
@@ -353,7 +366,7 @@ a.detail-value:hover { color: var(--primary-color); }
     to   { opacity: 1; }
 }
 
-/* Mobile Full-Screen */
+/* Mobile Full-Screen & Horizontal Header */
 @media (max-width: 440px) {
     body { align-items: flex-start; }
     .card-container {
@@ -362,5 +375,50 @@ a.detail-value:hover { color: var(--primary-color); }
         max-width: 100%;
         min-height: 100vh;
         border: none;
+        display: flex;
+        flex-direction: column;
     }
+    
+    .card-header {
+        text-align: left;
+        padding: 1.25rem 1.25rem 0.5rem;
+        display: flex;
+        align-items: center;
+        gap: 1.25rem;
+        background: none;
+    }
+    
+    .profile-pic-container {
+        margin: 0;
+        width: 72px; height: 72px;
+    }
+    
+    .card-info {
+        text-align: left;
+        padding: 0;
+        margin: 0;
+        flex: 1;
+    }
+    .card-info .name { font-size: 1.25rem; }
+    .card-info .designation { font-size: 0.78rem; }
+    .card-info .department { font-size: 0.7rem; }
+    
+    .et-logo-container {
+        top: 0.75rem; right: 1rem;
+    }
+    
+    .action-buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+        padding: 0.75rem 1.25rem;
+    }
+    .action-btn {
+        width: 100% !important;
+        height: auto !important;
+        flex-direction: row;
+        gap: 0.5rem;
+        padding: 0.6rem;
+    }
+    .action-btn i { font-size: 1.1rem; margin-bottom: 0; }
 }
