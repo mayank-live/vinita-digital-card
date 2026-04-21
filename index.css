@@ -54,7 +54,7 @@ a { color: inherit; text-decoration: none; }
 /* Card wrapper */
 .card-wrapper {
     width: 100%;
-    max-width: 720px;
+    max-width: 480px; /* Tightened from 720px for a cleaner single-column look */
     background: var(--card-bg);
     border: 1px solid var(--border);
     border-radius: 22px;
@@ -111,10 +111,10 @@ a { color: inherit; text-decoration: none; }
 /* Profile row (overlaps cover) */
 .profile-row {
     display: flex;
-    align-items: flex-end;
+    margin-top: -48px; /* Slightly adjusted for better alignment */
+    align-items: center; /* Center-align photo with name text */
     gap: 1rem;
     padding: 0 1.5rem 1rem;
-    margin-top: -50px;
     position: relative;
     z-index: 2;
 }
@@ -131,6 +131,7 @@ a { color: inherit; text-decoration: none; }
     width: 100%; height: 100%;
     object-fit: cover;
     object-position: center;
+    border-radius: 50%;
 }
 
 .identity {
@@ -202,15 +203,14 @@ a { color: inherit; text-decoration: none; }
 /* Horizontal rule */
 .card-body {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr; /* Single column for clean desktop look */
     gap: 0;
     border-top: 1px solid var(--border);
 }
 
 /* ---- LEFT COLUMN ---- */
 .col-left {
-    padding: 1.25rem 1.25rem 1.25rem 1.5rem;
-    border-right: 1px solid var(--border);
+    padding: 1.25rem 1.5rem;
 }
 
 /* ---- RIGHT COLUMN ---- */
@@ -374,8 +374,7 @@ a.value:hover { color: var(--red); }
     
     .quick-pills {
         width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
         gap: 0.5rem;
         margin-top: 1rem;
     }
