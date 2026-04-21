@@ -381,7 +381,7 @@ a.detail-value:hover { color: var(--primary-color); }
     
     .card-header {
         text-align: left;
-        padding: 1.25rem 1.25rem 0.5rem;
+        padding: 2rem 1.25rem 1rem; /* Restored more generous top padding */
         display: flex;
         align-items: center;
         gap: 1.25rem;

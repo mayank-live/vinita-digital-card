@@ -361,8 +361,13 @@ a.value:hover { color: var(--red); }
     }
     .identity {
         padding-bottom: 0;
-        margin-top: 40px; /* Offset the negative margin for label alignment */
+        margin-top: -40px; /* Bring it up onto the strip beside the photo */
+        color: #ffffff; /* White text when on the dark badge part? No, the background was light gradient. */
     }
+    .identity .name { color: #000000; }
+    .identity .designation { color: var(--red); }
+    .identity .department { color: #555555; }
+
     .name { font-size: 1.25rem; }
     .designation { font-size: 0.75rem; }
     .department { font-size: 0.7rem; }
