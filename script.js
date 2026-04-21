@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
         title: 'Senior Lead - Community Relationship',
         company: 'The Economic Times Verticals, Times Internet Ltd.',
         phoneMobile: '+919820590053',
-        phoneWork: '+912266353535',
         email: 'vinita.hassija@timesinternet.in',
         website1: 'https://b2b.economictimes.indiatimes.com/',
         website2: 'http://www.timesinternet.in',
