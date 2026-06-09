@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
+
     // Contact Data for vCard
     const contactData = {
         firstName: 'Vinita',
@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
         title: 'Senior Lead - Community Relationship',
         company: 'The Economic Times',
         phoneMobile: '+919820590053',
-        email: 'vinita.hassija@economictimes.com',
+        email: 'vinita.hassija@timesinternet.in',
         website1: 'https://b2b.economictimes.indiatimes.com/',
         addressStreet: 'Times of India Bldg., Dr. D. N. Road, Opposite CST Station',
         addressCity: 'Mumbai',
@@ -35,15 +35,15 @@ END:VCARD`;
 
             const blob = new Blob([vcard], { type: 'text/vcard' });
             const url = URL.createObjectURL(blob);
-            
+
             const a = document.createElement('a');
             a.style.display = 'none';
             a.href = url;
             a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
-            
+
             document.body.appendChild(a);
             a.click();
-            
+
             window.URL.revokeObjectURL(url);
             document.body.removeChild(a);
         });
