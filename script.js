@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const contactData = {
         firstName: 'Vinita',
         lastName: 'K Hassija',
-        title: 'Senior Lead - Community Relationship',
+        title: 'Head - Community Relationship',
         company: 'The Economic Times',
         phoneMobile: '+919820590053',
         email: 'vinita.hassija@timesinternet.in',
