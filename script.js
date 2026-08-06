@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
         firstName: 'Vinita',
         lastName: 'K Hassija',
         title: 'Head - Community Relationship',
-        company: 'The Economic Times',
+        company: 'The Economic Times- Business Verticals',
         phoneMobile: '+919820590053',
         email: 'vinita.hassija@timesinternet.in',
         website1: 'https://b2b.economictimes.indiatimes.com/',
